@@ -16,8 +16,5 @@ let package = Package(
         .target(
             name: "DangerXcodeStaticAnalyzer",
             dependencies: ["Danger"]),
-        .testTarget(
-            name: "DangerXcodeStaticAnalyzerTests",
-            dependencies: ["DangerXcodeStaticAnalyzer"]),
     ]
 )
