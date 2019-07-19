@@ -39,6 +39,7 @@ internal extension XcodeStaticAnalyzer {
             outputDirectory = NSTemporaryDirectory().appending("/clang")
         }
 
+        // Clear out the directory, if applicable.
         print("output directory: \(outputDirectory)")
         if FileManager.default.fileExists(atPath: outputDirectory) {
             do {
@@ -88,6 +89,15 @@ internal extension XcodeStaticAnalyzer {
             print("\(violation.location.file)")
             warn(message: violation.description, file: violation.location.file, line: violation.location.line)
         })
+
+        // Clean up.
+        if FileManager.default.fileExists(atPath: outputDirectory) {
+            do {
+                try FileManager.default.removeItem(atPath: outputDirectory)
+            } catch {
+                print(error)
+            }
+        }
 
         return analyzerViolations
     }
