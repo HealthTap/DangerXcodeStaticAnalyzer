@@ -6,8 +6,8 @@
         "repositoryURL": "https://github.com/danger/danger-swift.git",
         "state": {
           "branch": null,
-          "revision": "9b45e35f7f31a80a9cdf9fa36eda3085bb448ab0",
-          "version": "0.8.1"
+          "revision": "33d35bf94f54155be505ffecfca745e4cc1cd0cc",
+          "version": "1.6.5"
         }
       },
       {
@@ -21,7 +21,7 @@
       },
       {
         "package": "Logger",
-        "repositoryURL": "https://github.com/f-meloni/Logger",
+        "repositoryURL": "https://github.com/shibapm/Logger",
         "state": {
           "branch": null,
           "revision": "53c3ecca5abe8cf46697e33901ee774236d94cce",
@@ -75,7 +75,7 @@
       },
       {
         "package": "ShellOut",
-        "repositoryURL": "https://github.com/JohnSundell/ShellOut",
+        "repositoryURL": "https://github.com/JohnSundell/ShellOut.git",
         "state": {
           "branch": null,
           "revision": "d3d54ce662dfee7fef619330b71d251b8d4869f9",

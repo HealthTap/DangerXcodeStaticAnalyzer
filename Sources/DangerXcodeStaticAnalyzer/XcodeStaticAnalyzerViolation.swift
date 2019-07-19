@@ -1,10 +1,10 @@
-struct XcodeStaticAnalyzerViolation: Codable {
-    let description: String
-    let location: Location
+public struct XcodeStaticAnalyzerViolation: Codable {
+    public let description: String
+    public let location: Location
 
-    struct Location: Codable {
-        let line: Int
-        let column: Int
-        let file: String
+    public struct Location: Codable {
+        public let line: Int
+        public let column: Int
+        public let file: String
     }
 }

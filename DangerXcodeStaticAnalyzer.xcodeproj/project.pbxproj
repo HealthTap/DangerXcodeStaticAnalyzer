@@ -6,322 +6,241 @@
 	objectVersion = 46;
 	objects = {
 
-/* Begin PBXAggregateTarget section */
-		"DangerXcodeStaticAnalyzer::DangerXcodeStaticAnalyzerPackageTests::ProductTarget" /* DangerXcodeStaticAnalyzerPackageTests */ = {
-			isa = PBXAggregateTarget;
-			buildConfigurationList = OBJ_146 /* Build configuration list for PBXAggregateTarget "DangerXcodeStaticAnalyzerPackageTests" */;
-			buildPhases = (
-			);
-			dependencies = (
-				OBJ_149 /* PBXTargetDependency */,
-			);
-			name = DangerXcodeStaticAnalyzerPackageTests;
-			productName = DangerXcodeStaticAnalyzerPackageTests;
-		};
-/* End PBXAggregateTarget section */
-
 /* Begin PBXBuildFile section */
-		9B29529C22E20C3B00D41334 /* DangerXcodeStaticAnalyzer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B29529B22E20C3B00D41334 /* DangerXcodeStaticAnalyzer.swift */; };
-		9B29529E22E20D1100D41334 /* XcodeStaticAnalyzerPlist.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B29529D22E20D1100D41334 /* XcodeStaticAnalyzerPlist.swift */; };
-		OBJ_100 /* CurrentPathProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_36 /* CurrentPathProvider.swift */; };
-		OBJ_101 /* ShellExecutor.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_37 /* ShellExecutor.swift */; };
-		OBJ_102 /* SwiftLint.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_38 /* SwiftLint.swift */; };
-		OBJ_103 /* SwiftLintViolation.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_39 /* SwiftLintViolation.swift */; };
-		OBJ_104 /* Report.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_40 /* Report.swift */; };
-		OBJ_105 /* Settings.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_41 /* Settings.swift */; };
-		OBJ_107 /* Logger.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = "Logger::Logger::Product" /* Logger.framework */; };
-		OBJ_108 /* OctoKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = "OctoKit::OctoKit::Product" /* OctoKit.framework */; };
-		OBJ_109 /* RequestKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = "RequestKit::RequestKit::Product" /* RequestKit.framework */; };
-		OBJ_110 /* ShellOut.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = "ShellOut::ShellOut::Product" /* ShellOut.framework */; };
-		OBJ_126 /* ShellExecutor.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_11 /* ShellExecutor.swift */; };
-		OBJ_127 /* XcodeStaticAnalyzerViolation.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_12 /* XcodeStaticAnalyzerViolation.swift */; };
-		OBJ_129 /* Danger.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = "danger-swift::Danger::Product" /* Danger.framework */; };
-		OBJ_130 /* Logger.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = "Logger::Logger::Product" /* Logger.framework */; };
-		OBJ_131 /* OctoKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = "OctoKit::OctoKit::Product" /* OctoKit.framework */; };
-		OBJ_132 /* RequestKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = "RequestKit::RequestKit::Product" /* RequestKit.framework */; };
-		OBJ_133 /* ShellOut.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = "ShellOut::ShellOut::Product" /* ShellOut.framework */; };
-		OBJ_144 /* Package.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_6 /* Package.swift */; };
-		OBJ_161 /* DangerXcodeStaticAnalyzer.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = "DangerXcodeStaticAnalyzer::DangerXcodeStaticAnalyzer::Product" /* DangerXcodeStaticAnalyzer.framework */; };
-		OBJ_162 /* Danger.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = "danger-swift::Danger::Product" /* Danger.framework */; };
-		OBJ_163 /* Logger.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = "Logger::Logger::Product" /* Logger.framework */; };
-		OBJ_164 /* OctoKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = "OctoKit::OctoKit::Product" /* OctoKit.framework */; };
-		OBJ_165 /* RequestKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = "RequestKit::RequestKit::Product" /* RequestKit.framework */; };
-		OBJ_166 /* ShellOut.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = "ShellOut::ShellOut::Product" /* ShellOut.framework */; };
-		OBJ_177 /* Logger.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_74 /* Logger.swift */; };
-		OBJ_184 /* Package.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_75 /* Package.swift */; };
-		OBJ_189 /* Configuration.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_49 /* Configuration.swift */; };
-		OBJ_190 /* Follow.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_50 /* Follow.swift */; };
-		OBJ_191 /* Issue.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_51 /* Issue.swift */; };
-		OBJ_192 /* Label.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_52 /* Label.swift */; };
-		OBJ_193 /* Milestone.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_53 /* Milestone.swift */; };
-		OBJ_194 /* Octokit.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_54 /* Octokit.swift */; };
-		OBJ_195 /* Parameters.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_55 /* Parameters.swift */; };
-		OBJ_196 /* PublicKey.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_56 /* PublicKey.swift */; };
-		OBJ_197 /* PullRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_57 /* PullRequest.swift */; };
-		OBJ_198 /* Repositories.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_58 /* Repositories.swift */; };
-		OBJ_199 /* Stars.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_59 /* Stars.swift */; };
-		OBJ_200 /* Time.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_60 /* Time.swift */; };
-		OBJ_201 /* URL+URLParameters.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_61 /* URL+URLParameters.swift */; };
-		OBJ_202 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_62 /* User.swift */; };
-		OBJ_204 /* RequestKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = "RequestKit::RequestKit::Product" /* RequestKit.framework */; };
-		OBJ_211 /* Package.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_47 /* Package.swift */; };
-		OBJ_216 /* JSONPostRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_65 /* JSONPostRouter.swift */; };
-		OBJ_217 /* RequestKitSession.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_66 /* RequestKitSession.swift */; };
-		OBJ_218 /* Router.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_67 /* Router.swift */; };
-		OBJ_225 /* Package.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_68 /* Package.swift */; };
-		OBJ_230 /* ShellOut.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_71 /* ShellOut.swift */; };
-		OBJ_237 /* Package.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_70 /* Package.swift */; };
-		OBJ_243 /* Package.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_45 /* Package.swift */; };
-		OBJ_90 /* BitBucketServerDSL.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_23 /* BitBucketServerDSL.swift */; };
-		OBJ_91 /* Danger.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_24 /* Danger.swift */; };
-		OBJ_92 /* DangerDSL.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_25 /* DangerDSL.swift */; };
-		OBJ_93 /* DangerResults.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_26 /* DangerResults.swift */; };
-		OBJ_94 /* DangerUtils.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_27 /* DangerUtils.swift */; };
-		OBJ_95 /* DateFormatterExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_29 /* DateFormatterExtensions.swift */; };
-		OBJ_96 /* NSRegularExpressionExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_30 /* NSRegularExpressionExtensions.swift */; };
-		OBJ_97 /* File.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_31 /* File.swift */; };
-		OBJ_98 /* GitDSL.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_32 /* GitDSL.swift */; };
-		OBJ_99 /* GitHubDSL.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_33 /* GitHubDSL.swift */; };
+		OBJ_100 /* Report.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_35 /* Report.swift */; };
+		OBJ_101 /* Settings.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_36 /* Settings.swift */; };
+		OBJ_103 /* Logger.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = "Logger::Logger::Product" /* Logger.framework */; };
+		OBJ_104 /* OctoKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = "OctoKit::OctoKit::Product" /* OctoKit.framework */; };
+		OBJ_105 /* RequestKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = "RequestKit::RequestKit::Product" /* RequestKit.framework */; };
+		OBJ_106 /* DangerShellExecutor.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = "danger-swift::DangerShellExecutor::Product" /* DangerShellExecutor.framework */; };
+		OBJ_119 /* ShellExecutor.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_39 /* ShellExecutor.swift */; };
+		OBJ_126 /* DangerXcodeStaticAnalyzer.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_9 /* DangerXcodeStaticAnalyzer.swift */; };
+		OBJ_127 /* ShellExecutor.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_10 /* ShellExecutor.swift */; };
+		OBJ_128 /* XcodeStaticAnalyzerPlist.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_11 /* XcodeStaticAnalyzerPlist.swift */; };
+		OBJ_129 /* XcodeStaticAnalyzerViolation.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_12 /* XcodeStaticAnalyzerViolation.swift */; };
+		OBJ_131 /* Danger.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = "danger-swift::Danger::Product" /* Danger.framework */; };
+		OBJ_132 /* Logger.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = "Logger::Logger::Product" /* Logger.framework */; };
+		OBJ_133 /* OctoKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = "OctoKit::OctoKit::Product" /* OctoKit.framework */; };
+		OBJ_134 /* RequestKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = "RequestKit::RequestKit::Product" /* RequestKit.framework */; };
+		OBJ_135 /* DangerShellExecutor.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = "danger-swift::DangerShellExecutor::Product" /* DangerShellExecutor.framework */; };
+		OBJ_146 /* Package.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_6 /* Package.swift */; };
+		OBJ_151 /* Logger.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_68 /* Logger.swift */; };
+		OBJ_158 /* Package.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_69 /* Package.swift */; };
+		OBJ_163 /* Configuration.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_46 /* Configuration.swift */; };
+		OBJ_164 /* Follow.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_47 /* Follow.swift */; };
+		OBJ_165 /* Issue.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_48 /* Issue.swift */; };
+		OBJ_166 /* Label.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_49 /* Label.swift */; };
+		OBJ_167 /* Milestone.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_50 /* Milestone.swift */; };
+		OBJ_168 /* Octokit.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_51 /* Octokit.swift */; };
+		OBJ_169 /* Parameters.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_52 /* Parameters.swift */; };
+		OBJ_170 /* PublicKey.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_53 /* PublicKey.swift */; };
+		OBJ_171 /* PullRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_54 /* PullRequest.swift */; };
+		OBJ_172 /* Repositories.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_55 /* Repositories.swift */; };
+		OBJ_173 /* Stars.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_56 /* Stars.swift */; };
+		OBJ_174 /* Time.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_57 /* Time.swift */; };
+		OBJ_175 /* URL+URLParameters.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_58 /* URL+URLParameters.swift */; };
+		OBJ_176 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_59 /* User.swift */; };
+		OBJ_178 /* RequestKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = "RequestKit::RequestKit::Product" /* RequestKit.framework */; };
+		OBJ_185 /* Package.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_44 /* Package.swift */; };
+		OBJ_190 /* JSONPostRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_62 /* JSONPostRouter.swift */; };
+		OBJ_191 /* RequestKitSession.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_63 /* RequestKitSession.swift */; };
+		OBJ_192 /* Router.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_64 /* Router.swift */; };
+		OBJ_199 /* Package.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_65 /* Package.swift */; };
+		OBJ_205 /* Package.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_42 /* Package.swift */; };
+		OBJ_85 /* BitBucketServerDSL.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_17 /* BitBucketServerDSL.swift */; };
+		OBJ_86 /* Danger.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_18 /* Danger.swift */; };
+		OBJ_87 /* DangerDSL.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_19 /* DangerDSL.swift */; };
+		OBJ_88 /* DangerResults.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_20 /* DangerResults.swift */; };
+		OBJ_89 /* DangerUtils.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_21 /* DangerUtils.swift */; };
+		OBJ_90 /* DateFormatterExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_23 /* DateFormatterExtensions.swift */; };
+		OBJ_91 /* NSRegularExpressionExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_24 /* NSRegularExpressionExtensions.swift */; };
+		OBJ_92 /* File.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_25 /* File.swift */; };
+		OBJ_93 /* GitDSL.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_26 /* GitDSL.swift */; };
+		OBJ_94 /* GitHubDSL.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_27 /* GitHubDSL.swift */; };
+		OBJ_95 /* GitLabDSL.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_28 /* GitLabDSL.swift */; };
+		OBJ_96 /* CurrentPathProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_31 /* CurrentPathProvider.swift */; };
+		OBJ_97 /* SwiftLint.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_32 /* SwiftLint.swift */; };
+		OBJ_98 /* SwiftLintViolation.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_33 /* SwiftLintViolation.swift */; };
+		OBJ_99 /* SwiftlintReportDeleter.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_34 /* SwiftlintReportDeleter.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		9B29528A22E20B6D00D41334 /* PBXContainerItemProxy */ = {
+		9B81502022E22640001022CF /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = OBJ_1 /* Project object */;
 			proxyType = 1;
 			remoteGlobalIDString = "danger-swift::Danger";
 			remoteInfo = Danger;
 		};
-		9B29528B22E20B6D00D41334 /* PBXContainerItemProxy */ = {
+		9B81502122E22640001022CF /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = OBJ_1 /* Project object */;
 			proxyType = 1;
 			remoteGlobalIDString = "Logger::Logger";
 			remoteInfo = Logger;
 		};
-		9B29528C22E20B6D00D41334 /* PBXContainerItemProxy */ = {
+		9B81502222E22640001022CF /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = OBJ_1 /* Project object */;
 			proxyType = 1;
 			remoteGlobalIDString = "OctoKit::OctoKit";
 			remoteInfo = OctoKit;
 		};
-		9B29528D22E20B6D00D41334 /* PBXContainerItemProxy */ = {
+		9B81502322E22640001022CF /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = OBJ_1 /* Project object */;
 			proxyType = 1;
 			remoteGlobalIDString = "RequestKit::RequestKit";
 			remoteInfo = RequestKit;
 		};
-		9B29528E22E20B6D00D41334 /* PBXContainerItemProxy */ = {
+		9B81502422E22640001022CF /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = OBJ_1 /* Project object */;
 			proxyType = 1;
 			remoteGlobalIDString = "RequestKit::RequestKit";
 			remoteInfo = RequestKit;
 		};
-		9B29528F22E20B6D00D41334 /* PBXContainerItemProxy */ = {
+		9B81502522E22640001022CF /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = OBJ_1 /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = "ShellOut::ShellOut";
-			remoteInfo = ShellOut;
+			remoteGlobalIDString = "danger-swift::DangerShellExecutor";
+			remoteInfo = DangerShellExecutor;
 		};
-		9B29529022E20B6D00D41334 /* PBXContainerItemProxy */ = {
+		9B81502622E22640001022CF /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = OBJ_1 /* Project object */;
 			proxyType = 1;
 			remoteGlobalIDString = "Logger::Logger";
 			remoteInfo = Logger;
 		};
-		9B29529122E20B6D00D41334 /* PBXContainerItemProxy */ = {
+		9B81502722E22640001022CF /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = OBJ_1 /* Project object */;
 			proxyType = 1;
 			remoteGlobalIDString = "OctoKit::OctoKit";
 			remoteInfo = OctoKit;
 		};
-		9B29529222E20B6D00D41334 /* PBXContainerItemProxy */ = {
+		9B81502822E22640001022CF /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = OBJ_1 /* Project object */;
 			proxyType = 1;
 			remoteGlobalIDString = "RequestKit::RequestKit";
 			remoteInfo = RequestKit;
 		};
-		9B29529322E20B6D00D41334 /* PBXContainerItemProxy */ = {
+		9B81502922E22640001022CF /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = OBJ_1 /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = "ShellOut::ShellOut";
-			remoteInfo = ShellOut;
-		};
-		9B29529422E20B6D00D41334 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = OBJ_1 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = "DangerXcodeStaticAnalyzer::DangerXcodeStaticAnalyzer";
-			remoteInfo = DangerXcodeStaticAnalyzer;
-		};
-		9B29529522E20B6D00D41334 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = OBJ_1 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = "danger-swift::Danger";
-			remoteInfo = Danger;
-		};
-		9B29529622E20B6D00D41334 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = OBJ_1 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = "Logger::Logger";
-			remoteInfo = Logger;
-		};
-		9B29529722E20B6D00D41334 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = OBJ_1 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = "OctoKit::OctoKit";
-			remoteInfo = OctoKit;
-		};
-		9B29529822E20B6D00D41334 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = OBJ_1 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = "RequestKit::RequestKit";
-			remoteInfo = RequestKit;
-		};
-		9B29529922E20B6D00D41334 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = OBJ_1 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = "ShellOut::ShellOut";
-			remoteInfo = ShellOut;
-		};
-		9B29529A22E20B6F00D41334 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = OBJ_1 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = "DangerXcodeStaticAnalyzer::DangerXcodeStaticAnalyzerTests";
-			remoteInfo = DangerXcodeStaticAnalyzerTests;
+			remoteGlobalIDString = "danger-swift::DangerShellExecutor";
+			remoteInfo = DangerShellExecutor;
 		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		9B29529B22E20C3B00D41334 /* DangerXcodeStaticAnalyzer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DangerXcodeStaticAnalyzer.swift; sourceTree = "<group>"; };
-		9B29529D22E20D1100D41334 /* XcodeStaticAnalyzerPlist.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = XcodeStaticAnalyzerPlist.swift; sourceTree = "<group>"; };
 		"DangerXcodeStaticAnalyzer::DangerXcodeStaticAnalyzer::Product" /* DangerXcodeStaticAnalyzer.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = DangerXcodeStaticAnalyzer.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		"DangerXcodeStaticAnalyzer::DangerXcodeStaticAnalyzerTests::Product" /* DangerXcodeStaticAnalyzerTests.xctest */ = {isa = PBXFileReference; lastKnownFileType = file; path = DangerXcodeStaticAnalyzerTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		"Logger::Logger::Product" /* Logger.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Logger.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		OBJ_11 /* ShellExecutor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShellExecutor.swift; sourceTree = "<group>"; };
+		OBJ_10 /* ShellExecutor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShellExecutor.swift; sourceTree = "<group>"; };
+		OBJ_11 /* XcodeStaticAnalyzerPlist.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = XcodeStaticAnalyzerPlist.swift; sourceTree = "<group>"; };
 		OBJ_12 /* XcodeStaticAnalyzerViolation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = XcodeStaticAnalyzerViolation.swift; sourceTree = "<group>"; };
-		OBJ_23 /* BitBucketServerDSL.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BitBucketServerDSL.swift; sourceTree = "<group>"; };
-		OBJ_24 /* Danger.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Danger.swift; sourceTree = "<group>"; };
-		OBJ_25 /* DangerDSL.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DangerDSL.swift; sourceTree = "<group>"; };
-		OBJ_26 /* DangerResults.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DangerResults.swift; sourceTree = "<group>"; };
-		OBJ_27 /* DangerUtils.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DangerUtils.swift; sourceTree = "<group>"; };
-		OBJ_29 /* DateFormatterExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DateFormatterExtensions.swift; sourceTree = "<group>"; };
-		OBJ_30 /* NSRegularExpressionExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NSRegularExpressionExtensions.swift; sourceTree = "<group>"; };
-		OBJ_31 /* File.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = File.swift; sourceTree = "<group>"; };
-		OBJ_32 /* GitDSL.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GitDSL.swift; sourceTree = "<group>"; };
-		OBJ_33 /* GitHubDSL.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GitHubDSL.swift; sourceTree = "<group>"; };
-		OBJ_36 /* CurrentPathProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CurrentPathProvider.swift; sourceTree = "<group>"; };
-		OBJ_37 /* ShellExecutor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShellExecutor.swift; sourceTree = "<group>"; };
-		OBJ_38 /* SwiftLint.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftLint.swift; sourceTree = "<group>"; };
-		OBJ_39 /* SwiftLintViolation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftLintViolation.swift; sourceTree = "<group>"; };
-		OBJ_40 /* Report.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Report.swift; sourceTree = "<group>"; };
-		OBJ_41 /* Settings.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Settings.swift; sourceTree = "<group>"; };
-		OBJ_45 /* Package.swift */ = {isa = PBXFileReference; explicitFileType = sourcecode.swift; name = Package.swift; path = "/Users/eytanmoudahi/Downloads/danger-swiftlint-master 2/.build/checkouts/danger-swift/Package.swift"; sourceTree = "<group>"; };
-		OBJ_47 /* Package.swift */ = {isa = PBXFileReference; explicitFileType = sourcecode.swift; name = Package.swift; path = "/Users/eytanmoudahi/Downloads/danger-swiftlint-master 2/.build/checkouts/octokit.swift/Package.swift"; sourceTree = "<group>"; };
-		OBJ_49 /* Configuration.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Configuration.swift; sourceTree = "<group>"; };
-		OBJ_50 /* Follow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Follow.swift; sourceTree = "<group>"; };
-		OBJ_51 /* Issue.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Issue.swift; sourceTree = "<group>"; };
-		OBJ_52 /* Label.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Label.swift; sourceTree = "<group>"; };
-		OBJ_53 /* Milestone.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Milestone.swift; sourceTree = "<group>"; };
-		OBJ_54 /* Octokit.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Octokit.swift; sourceTree = "<group>"; };
-		OBJ_55 /* Parameters.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Parameters.swift; sourceTree = "<group>"; };
-		OBJ_56 /* PublicKey.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PublicKey.swift; sourceTree = "<group>"; };
-		OBJ_57 /* PullRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PullRequest.swift; sourceTree = "<group>"; };
-		OBJ_58 /* Repositories.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Repositories.swift; sourceTree = "<group>"; };
-		OBJ_59 /* Stars.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Stars.swift; sourceTree = "<group>"; };
+		OBJ_17 /* BitBucketServerDSL.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BitBucketServerDSL.swift; sourceTree = "<group>"; };
+		OBJ_18 /* Danger.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Danger.swift; sourceTree = "<group>"; };
+		OBJ_19 /* DangerDSL.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DangerDSL.swift; sourceTree = "<group>"; };
+		OBJ_20 /* DangerResults.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DangerResults.swift; sourceTree = "<group>"; };
+		OBJ_21 /* DangerUtils.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DangerUtils.swift; sourceTree = "<group>"; };
+		OBJ_23 /* DateFormatterExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DateFormatterExtensions.swift; sourceTree = "<group>"; };
+		OBJ_24 /* NSRegularExpressionExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NSRegularExpressionExtensions.swift; sourceTree = "<group>"; };
+		OBJ_25 /* File.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = File.swift; sourceTree = "<group>"; };
+		OBJ_26 /* GitDSL.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GitDSL.swift; sourceTree = "<group>"; };
+		OBJ_27 /* GitHubDSL.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GitHubDSL.swift; sourceTree = "<group>"; };
+		OBJ_28 /* GitLabDSL.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GitLabDSL.swift; sourceTree = "<group>"; };
+		OBJ_31 /* CurrentPathProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CurrentPathProvider.swift; sourceTree = "<group>"; };
+		OBJ_32 /* SwiftLint.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftLint.swift; sourceTree = "<group>"; };
+		OBJ_33 /* SwiftLintViolation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftLintViolation.swift; sourceTree = "<group>"; };
+		OBJ_34 /* SwiftlintReportDeleter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftlintReportDeleter.swift; sourceTree = "<group>"; };
+		OBJ_35 /* Report.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Report.swift; sourceTree = "<group>"; };
+		OBJ_36 /* Settings.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Settings.swift; sourceTree = "<group>"; };
+		OBJ_39 /* ShellExecutor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShellExecutor.swift; sourceTree = "<group>"; };
+		OBJ_42 /* Package.swift */ = {isa = PBXFileReference; explicitFileType = sourcecode.swift; name = Package.swift; path = "/Users/eytanmoudahi/Documents/iOS/danger-xcode-static-analyzer/.build/checkouts/danger-swift/Package.swift"; sourceTree = "<group>"; };
+		OBJ_44 /* Package.swift */ = {isa = PBXFileReference; explicitFileType = sourcecode.swift; name = Package.swift; path = "/Users/eytanmoudahi/Documents/iOS/danger-xcode-static-analyzer/.build/checkouts/octokit.swift/Package.swift"; sourceTree = "<group>"; };
+		OBJ_46 /* Configuration.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Configuration.swift; sourceTree = "<group>"; };
+		OBJ_47 /* Follow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Follow.swift; sourceTree = "<group>"; };
+		OBJ_48 /* Issue.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Issue.swift; sourceTree = "<group>"; };
+		OBJ_49 /* Label.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Label.swift; sourceTree = "<group>"; };
+		OBJ_50 /* Milestone.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Milestone.swift; sourceTree = "<group>"; };
+		OBJ_51 /* Octokit.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Octokit.swift; sourceTree = "<group>"; };
+		OBJ_52 /* Parameters.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Parameters.swift; sourceTree = "<group>"; };
+		OBJ_53 /* PublicKey.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PublicKey.swift; sourceTree = "<group>"; };
+		OBJ_54 /* PullRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PullRequest.swift; sourceTree = "<group>"; };
+		OBJ_55 /* Repositories.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Repositories.swift; sourceTree = "<group>"; };
+		OBJ_56 /* Stars.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Stars.swift; sourceTree = "<group>"; };
+		OBJ_57 /* Time.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Time.swift; sourceTree = "<group>"; };
+		OBJ_58 /* URL+URLParameters.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "URL+URLParameters.swift"; sourceTree = "<group>"; };
+		OBJ_59 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 		OBJ_6 /* Package.swift */ = {isa = PBXFileReference; explicitFileType = sourcecode.swift; path = Package.swift; sourceTree = "<group>"; };
-		OBJ_60 /* Time.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Time.swift; sourceTree = "<group>"; };
-		OBJ_61 /* URL+URLParameters.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "URL+URLParameters.swift"; sourceTree = "<group>"; };
-		OBJ_62 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
-		OBJ_65 /* JSONPostRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JSONPostRouter.swift; sourceTree = "<group>"; };
-		OBJ_66 /* RequestKitSession.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RequestKitSession.swift; sourceTree = "<group>"; };
-		OBJ_67 /* Router.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Router.swift; sourceTree = "<group>"; };
-		OBJ_68 /* Package.swift */ = {isa = PBXFileReference; explicitFileType = sourcecode.swift; name = Package.swift; path = "/Users/eytanmoudahi/Downloads/danger-swiftlint-master 2/.build/checkouts/RequestKit/Package.swift"; sourceTree = "<group>"; };
-		OBJ_70 /* Package.swift */ = {isa = PBXFileReference; explicitFileType = sourcecode.swift; name = Package.swift; path = "/Users/eytanmoudahi/Downloads/danger-swiftlint-master 2/.build/checkouts/ShellOut/Package.swift"; sourceTree = "<group>"; };
-		OBJ_71 /* ShellOut.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShellOut.swift; sourceTree = "<group>"; };
-		OBJ_74 /* Logger.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Logger.swift; sourceTree = "<group>"; };
-		OBJ_75 /* Package.swift */ = {isa = PBXFileReference; explicitFileType = sourcecode.swift; name = Package.swift; path = "/Users/eytanmoudahi/Downloads/danger-swiftlint-master 2/.build/checkouts/Logger/Package.swift"; sourceTree = "<group>"; };
-		OBJ_84 /* docs */ = {isa = PBXFileReference; lastKnownFileType = folder; path = docs; sourceTree = SOURCE_ROOT; };
+		OBJ_62 /* JSONPostRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JSONPostRouter.swift; sourceTree = "<group>"; };
+		OBJ_63 /* RequestKitSession.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RequestKitSession.swift; sourceTree = "<group>"; };
+		OBJ_64 /* Router.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Router.swift; sourceTree = "<group>"; };
+		OBJ_65 /* Package.swift */ = {isa = PBXFileReference; explicitFileType = sourcecode.swift; name = Package.swift; path = "/Users/eytanmoudahi/Documents/iOS/danger-xcode-static-analyzer/.build/checkouts/RequestKit/Package.swift"; sourceTree = "<group>"; };
+		OBJ_68 /* Logger.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Logger.swift; sourceTree = "<group>"; };
+		OBJ_69 /* Package.swift */ = {isa = PBXFileReference; explicitFileType = sourcecode.swift; name = Package.swift; path = "/Users/eytanmoudahi/Documents/iOS/danger-xcode-static-analyzer/.build/checkouts/Logger/Package.swift"; sourceTree = "<group>"; };
+		OBJ_77 /* docs */ = {isa = PBXFileReference; lastKnownFileType = folder; path = docs; sourceTree = SOURCE_ROOT; };
+		OBJ_78 /* LICENSE */ = {isa = PBXFileReference; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
+		OBJ_79 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		OBJ_9 /* DangerXcodeStaticAnalyzer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DangerXcodeStaticAnalyzer.swift; sourceTree = "<group>"; };
 		"OctoKit::OctoKit::Product" /* OctoKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = OctoKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		"RequestKit::RequestKit::Product" /* RequestKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = RequestKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		"ShellOut::ShellOut::Product" /* ShellOut.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = ShellOut.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		"danger-swift::Danger::Product" /* Danger.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Danger.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		"danger-swift::DangerShellExecutor::Product" /* DangerShellExecutor.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = DangerShellExecutor.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		OBJ_106 /* Frameworks */ = {
+		OBJ_102 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 0;
 			files = (
-				OBJ_107 /* Logger.framework in Frameworks */,
-				OBJ_108 /* OctoKit.framework in Frameworks */,
-				OBJ_109 /* RequestKit.framework in Frameworks */,
-				OBJ_110 /* ShellOut.framework in Frameworks */,
+				OBJ_103 /* Logger.framework in Frameworks */,
+				OBJ_104 /* OctoKit.framework in Frameworks */,
+				OBJ_105 /* RequestKit.framework in Frameworks */,
+				OBJ_106 /* DangerShellExecutor.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		OBJ_128 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 0;
-			files = (
-				OBJ_129 /* Danger.framework in Frameworks */,
-				OBJ_130 /* Logger.framework in Frameworks */,
-				OBJ_131 /* OctoKit.framework in Frameworks */,
-				OBJ_132 /* RequestKit.framework in Frameworks */,
-				OBJ_133 /* ShellOut.framework in Frameworks */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		OBJ_160 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 0;
-			files = (
-				OBJ_161 /* DangerXcodeStaticAnalyzer.framework in Frameworks */,
-				OBJ_162 /* Danger.framework in Frameworks */,
-				OBJ_163 /* Logger.framework in Frameworks */,
-				OBJ_164 /* OctoKit.framework in Frameworks */,
-				OBJ_165 /* RequestKit.framework in Frameworks */,
-				OBJ_166 /* ShellOut.framework in Frameworks */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		OBJ_178 /* Frameworks */ = {
+		OBJ_120 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 0;
 			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		OBJ_203 /* Frameworks */ = {
+		OBJ_130 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 0;
 			files = (
-				OBJ_204 /* RequestKit.framework in Frameworks */,
+				OBJ_131 /* Danger.framework in Frameworks */,
+				OBJ_132 /* Logger.framework in Frameworks */,
+				OBJ_133 /* OctoKit.framework in Frameworks */,
+				OBJ_134 /* RequestKit.framework in Frameworks */,
+				OBJ_135 /* DangerShellExecutor.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		OBJ_219 /* Frameworks */ = {
+		OBJ_152 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 0;
 			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		OBJ_231 /* Frameworks */ = {
+		OBJ_177 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 0;
+			files = (
+				OBJ_178 /* RequestKit.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		OBJ_193 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 0;
 			files = (
@@ -334,92 +253,84 @@
 		OBJ_13 /* Tests */ = {
 			isa = PBXGroup;
 			children = (
-				OBJ_14 /* DangerXcodeStaticAnalyzerTests */,
 			);
 			name = Tests;
 			sourceTree = SOURCE_ROOT;
 		};
-		OBJ_14 /* DangerXcodeStaticAnalyzerTests */ = {
+		OBJ_14 /* Dependencies */ = {
 			isa = PBXGroup;
 			children = (
-			);
-			name = DangerXcodeStaticAnalyzerTests;
-			path = Tests/DangerXcodeStaticAnalyzerTests;
-			sourceTree = SOURCE_ROOT;
-		};
-		OBJ_20 /* Dependencies */ = {
-			isa = PBXGroup;
-			children = (
-				OBJ_21 /* danger-swift 0.8.1 */,
-				OBJ_46 /* OctoKit 0.9.0 */,
-				OBJ_63 /* RequestKit 2.3.0 */,
-				OBJ_69 /* ShellOut 2.2.0 */,
-				OBJ_72 /* Logger 0.2.3 */,
+				OBJ_15 /* danger-swift 1.6.5 */,
+				OBJ_43 /* OctoKit 0.9.0 */,
+				OBJ_60 /* RequestKit 2.3.0 */,
+				OBJ_66 /* Logger 0.2.3 */,
 			);
 			name = Dependencies;
 			sourceTree = "<group>";
 		};
-		OBJ_21 /* danger-swift 0.8.1 */ = {
+		OBJ_15 /* danger-swift 1.6.5 */ = {
 			isa = PBXGroup;
 			children = (
-				OBJ_22 /* Danger */,
-				OBJ_42 /* DangerFixtures */,
-				OBJ_43 /* Runner */,
-				OBJ_44 /* RunnerLib */,
-				OBJ_45 /* Package.swift */,
+				OBJ_16 /* Danger */,
+				OBJ_37 /* DangerFixtures */,
+				OBJ_38 /* DangerShellExecutor */,
+				OBJ_40 /* Runner */,
+				OBJ_41 /* RunnerLib */,
+				OBJ_42 /* Package.swift */,
 			);
-			name = "danger-swift 0.8.1";
+			name = "danger-swift 1.6.5";
 			sourceTree = SOURCE_ROOT;
 		};
-		OBJ_22 /* Danger */ = {
+		OBJ_16 /* Danger */ = {
 			isa = PBXGroup;
 			children = (
-				OBJ_23 /* BitBucketServerDSL.swift */,
-				OBJ_24 /* Danger.swift */,
-				OBJ_25 /* DangerDSL.swift */,
-				OBJ_26 /* DangerResults.swift */,
-				OBJ_27 /* DangerUtils.swift */,
-				OBJ_28 /* Extensions */,
-				OBJ_31 /* File.swift */,
-				OBJ_32 /* GitDSL.swift */,
-				OBJ_33 /* GitHubDSL.swift */,
-				OBJ_34 /* Plugins */,
-				OBJ_40 /* Report.swift */,
-				OBJ_41 /* Settings.swift */,
+				OBJ_17 /* BitBucketServerDSL.swift */,
+				OBJ_18 /* Danger.swift */,
+				OBJ_19 /* DangerDSL.swift */,
+				OBJ_20 /* DangerResults.swift */,
+				OBJ_21 /* DangerUtils.swift */,
+				OBJ_22 /* Extensions */,
+				OBJ_25 /* File.swift */,
+				OBJ_26 /* GitDSL.swift */,
+				OBJ_27 /* GitHubDSL.swift */,
+				OBJ_28 /* GitLabDSL.swift */,
+				OBJ_29 /* Plugins */,
+				OBJ_35 /* Report.swift */,
+				OBJ_36 /* Settings.swift */,
 			);
 			name = Danger;
 			path = ".build/checkouts/danger-swift/Sources/Danger";
 			sourceTree = SOURCE_ROOT;
 		};
-		OBJ_28 /* Extensions */ = {
+		OBJ_22 /* Extensions */ = {
 			isa = PBXGroup;
 			children = (
-				OBJ_29 /* DateFormatterExtensions.swift */,
-				OBJ_30 /* NSRegularExpressionExtensions.swift */,
+				OBJ_23 /* DateFormatterExtensions.swift */,
+				OBJ_24 /* NSRegularExpressionExtensions.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
 		};
-		OBJ_34 /* Plugins */ = {
+		OBJ_29 /* Plugins */ = {
 			isa = PBXGroup;
 			children = (
-				OBJ_35 /* SwiftLint */,
+				OBJ_30 /* SwiftLint */,
 			);
 			path = Plugins;
 			sourceTree = "<group>";
 		};
-		OBJ_35 /* SwiftLint */ = {
+		OBJ_30 /* SwiftLint */ = {
 			isa = PBXGroup;
 			children = (
-				OBJ_36 /* CurrentPathProvider.swift */,
-				OBJ_37 /* ShellExecutor.swift */,
-				OBJ_38 /* SwiftLint.swift */,
-				OBJ_39 /* SwiftLintViolation.swift */,
+				OBJ_31 /* CurrentPathProvider.swift */,
+				OBJ_32 /* SwiftLint.swift */,
+				OBJ_33 /* SwiftLintViolation.swift */,
+				OBJ_34 /* SwiftlintReportDeleter.swift */,
 			);
 			path = SwiftLint;
 			sourceTree = "<group>";
 		};
-		OBJ_42 /* DangerFixtures */ = {
+		OBJ_37 /* DangerFixtures */ = {
 			isa = PBXGroup;
 			children = (
 			);
@@ -427,7 +338,16 @@
 			path = ".build/checkouts/danger-swift/Sources/DangerFixtures";
 			sourceTree = SOURCE_ROOT;
 		};
-		OBJ_43 /* Runner */ = {
+		OBJ_38 /* DangerShellExecutor */ = {
+			isa = PBXGroup;
+			children = (
+				OBJ_39 /* ShellExecutor.swift */,
+			);
+			name = DangerShellExecutor;
+			path = ".build/checkouts/danger-swift/Sources/DangerShellExecutor";
+			sourceTree = SOURCE_ROOT;
+		};
+		OBJ_40 /* Runner */ = {
 			isa = PBXGroup;
 			children = (
 			);
@@ -435,7 +355,7 @@
 			path = ".build/checkouts/danger-swift/Sources/Runner";
 			sourceTree = SOURCE_ROOT;
 		};
-		OBJ_44 /* RunnerLib */ = {
+		OBJ_41 /* RunnerLib */ = {
 			isa = PBXGroup;
 			children = (
 			);
@@ -443,33 +363,33 @@
 			path = ".build/checkouts/danger-swift/Sources/RunnerLib";
 			sourceTree = SOURCE_ROOT;
 		};
-		OBJ_46 /* OctoKit 0.9.0 */ = {
+		OBJ_43 /* OctoKit 0.9.0 */ = {
 			isa = PBXGroup;
 			children = (
-				OBJ_47 /* Package.swift */,
-				OBJ_48 /* OctoKit */,
+				OBJ_44 /* Package.swift */,
+				OBJ_45 /* OctoKit */,
 			);
 			name = "OctoKit 0.9.0";
 			path = .build/checkouts/octokit.swift;
 			sourceTree = SOURCE_ROOT;
 		};
-		OBJ_48 /* OctoKit */ = {
+		OBJ_45 /* OctoKit */ = {
 			isa = PBXGroup;
 			children = (
-				OBJ_49 /* Configuration.swift */,
-				OBJ_50 /* Follow.swift */,
-				OBJ_51 /* Issue.swift */,
-				OBJ_52 /* Label.swift */,
-				OBJ_53 /* Milestone.swift */,
-				OBJ_54 /* Octokit.swift */,
-				OBJ_55 /* Parameters.swift */,
-				OBJ_56 /* PublicKey.swift */,
-				OBJ_57 /* PullRequest.swift */,
-				OBJ_58 /* Repositories.swift */,
-				OBJ_59 /* Stars.swift */,
-				OBJ_60 /* Time.swift */,
-				OBJ_61 /* URL+URLParameters.swift */,
-				OBJ_62 /* User.swift */,
+				OBJ_46 /* Configuration.swift */,
+				OBJ_47 /* Follow.swift */,
+				OBJ_48 /* Issue.swift */,
+				OBJ_49 /* Label.swift */,
+				OBJ_50 /* Milestone.swift */,
+				OBJ_51 /* Octokit.swift */,
+				OBJ_52 /* Parameters.swift */,
+				OBJ_53 /* PublicKey.swift */,
+				OBJ_54 /* PullRequest.swift */,
+				OBJ_55 /* Repositories.swift */,
+				OBJ_56 /* Stars.swift */,
+				OBJ_57 /* Time.swift */,
+				OBJ_58 /* URL+URLParameters.swift */,
+				OBJ_59 /* User.swift */,
 			);
 			path = OctoKit;
 			sourceTree = "<group>";
@@ -480,41 +400,51 @@
 				OBJ_6 /* Package.swift */,
 				OBJ_7 /* Sources */,
 				OBJ_13 /* Tests */,
-				OBJ_20 /* Dependencies */,
-				OBJ_76 /* Products */,
-				OBJ_84 /* docs */,
+				OBJ_14 /* Dependencies */,
+				OBJ_70 /* Products */,
+				OBJ_77 /* docs */,
+				OBJ_78 /* LICENSE */,
+				OBJ_79 /* README.md */,
 			);
 			name = "";
 			sourceTree = "<group>";
 		};
-		OBJ_63 /* RequestKit 2.3.0 */ = {
+		OBJ_60 /* RequestKit 2.3.0 */ = {
 			isa = PBXGroup;
 			children = (
-				OBJ_64 /* RequestKit */,
-				OBJ_68 /* Package.swift */,
+				OBJ_61 /* RequestKit */,
+				OBJ_65 /* Package.swift */,
 			);
 			name = "RequestKit 2.3.0";
 			sourceTree = SOURCE_ROOT;
 		};
-		OBJ_64 /* RequestKit */ = {
+		OBJ_61 /* RequestKit */ = {
 			isa = PBXGroup;
 			children = (
-				OBJ_65 /* JSONPostRouter.swift */,
-				OBJ_66 /* RequestKitSession.swift */,
-				OBJ_67 /* Router.swift */,
+				OBJ_62 /* JSONPostRouter.swift */,
+				OBJ_63 /* RequestKitSession.swift */,
+				OBJ_64 /* Router.swift */,
 			);
 			name = RequestKit;
 			path = .build/checkouts/RequestKit/Sources/RequestKit;
 			sourceTree = SOURCE_ROOT;
 		};
-		OBJ_69 /* ShellOut 2.2.0 */ = {
+		OBJ_66 /* Logger 0.2.3 */ = {
 			isa = PBXGroup;
 			children = (
-				OBJ_70 /* Package.swift */,
-				OBJ_71 /* ShellOut.swift */,
+				OBJ_67 /* Logger */,
+				OBJ_69 /* Package.swift */,
 			);
-			name = "ShellOut 2.2.0";
-			path = .build/checkouts/ShellOut/Sources;
+			name = "Logger 0.2.3";
+			sourceTree = SOURCE_ROOT;
+		};
+		OBJ_67 /* Logger */ = {
+			isa = PBXGroup;
+			children = (
+				OBJ_68 /* Logger.swift */,
+			);
+			name = Logger;
+			path = .build/checkouts/Logger/Sources/Logger;
 			sourceTree = SOURCE_ROOT;
 		};
 		OBJ_7 /* Sources */ = {
@@ -525,34 +455,15 @@
 			name = Sources;
 			sourceTree = SOURCE_ROOT;
 		};
-		OBJ_72 /* Logger 0.2.3 */ = {
+		OBJ_70 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				OBJ_73 /* Logger */,
-				OBJ_75 /* Package.swift */,
-			);
-			name = "Logger 0.2.3";
-			sourceTree = SOURCE_ROOT;
-		};
-		OBJ_73 /* Logger */ = {
-			isa = PBXGroup;
-			children = (
-				OBJ_74 /* Logger.swift */,
-			);
-			name = Logger;
-			path = .build/checkouts/Logger/Sources/Logger;
-			sourceTree = SOURCE_ROOT;
-		};
-		OBJ_76 /* Products */ = {
-			isa = PBXGroup;
-			children = (
-				"OctoKit::OctoKit::Product" /* OctoKit.framework */,
-				"Logger::Logger::Product" /* Logger.framework */,
-				"ShellOut::ShellOut::Product" /* ShellOut.framework */,
-				"danger-swift::Danger::Product" /* Danger.framework */,
-				"RequestKit::RequestKit::Product" /* RequestKit.framework */,
 				"DangerXcodeStaticAnalyzer::DangerXcodeStaticAnalyzer::Product" /* DangerXcodeStaticAnalyzer.framework */,
-				"DangerXcodeStaticAnalyzer::DangerXcodeStaticAnalyzerTests::Product" /* DangerXcodeStaticAnalyzerTests.xctest */,
+				"OctoKit::OctoKit::Product" /* OctoKit.framework */,
+				"danger-swift::Danger::Product" /* Danger.framework */,
+				"Logger::Logger::Product" /* Logger.framework */,
+				"RequestKit::RequestKit::Product" /* RequestKit.framework */,
+				"danger-swift::DangerShellExecutor::Product" /* DangerShellExecutor.framework */,
 			);
 			name = Products;
 			sourceTree = BUILT_PRODUCTS_DIR;
@@ -560,10 +471,10 @@
 		OBJ_8 /* DangerXcodeStaticAnalyzer */ = {
 			isa = PBXGroup;
 			children = (
-				9B29529B22E20C3B00D41334 /* DangerXcodeStaticAnalyzer.swift */,
-				OBJ_11 /* ShellExecutor.swift */,
+				OBJ_9 /* DangerXcodeStaticAnalyzer.swift */,
+				OBJ_10 /* ShellExecutor.swift */,
+				OBJ_11 /* XcodeStaticAnalyzerPlist.swift */,
 				OBJ_12 /* XcodeStaticAnalyzerViolation.swift */,
-				9B29529D22E20D1100D41334 /* XcodeStaticAnalyzerPlist.swift */,
 			);
 			name = DangerXcodeStaticAnalyzer;
 			path = Sources/DangerXcodeStaticAnalyzer;
@@ -574,52 +485,30 @@
 /* Begin PBXNativeTarget section */
 		"DangerXcodeStaticAnalyzer::DangerXcodeStaticAnalyzer" /* DangerXcodeStaticAnalyzer */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = OBJ_120 /* Build configuration list for PBXNativeTarget "DangerXcodeStaticAnalyzer" */;
+			buildConfigurationList = OBJ_122 /* Build configuration list for PBXNativeTarget "DangerXcodeStaticAnalyzer" */;
 			buildPhases = (
-				OBJ_123 /* Sources */,
-				OBJ_128 /* Frameworks */,
+				OBJ_125 /* Sources */,
+				OBJ_130 /* Frameworks */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-				OBJ_134 /* PBXTargetDependency */,
-				OBJ_135 /* PBXTargetDependency */,
 				OBJ_136 /* PBXTargetDependency */,
 				OBJ_137 /* PBXTargetDependency */,
 				OBJ_138 /* PBXTargetDependency */,
+				OBJ_139 /* PBXTargetDependency */,
+				OBJ_140 /* PBXTargetDependency */,
 			);
 			name = DangerXcodeStaticAnalyzer;
 			productName = DangerXcodeStaticAnalyzer;
 			productReference = "DangerXcodeStaticAnalyzer::DangerXcodeStaticAnalyzer::Product" /* DangerXcodeStaticAnalyzer.framework */;
 			productType = "com.apple.product-type.framework";
 		};
-		"DangerXcodeStaticAnalyzer::DangerXcodeStaticAnalyzerTests" /* DangerXcodeStaticAnalyzerTests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = OBJ_151 /* Build configuration list for PBXNativeTarget "DangerXcodeStaticAnalyzerTests" */;
-			buildPhases = (
-				OBJ_154 /* Sources */,
-				OBJ_160 /* Frameworks */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				OBJ_167 /* PBXTargetDependency */,
-				OBJ_168 /* PBXTargetDependency */,
-				OBJ_169 /* PBXTargetDependency */,
-				OBJ_170 /* PBXTargetDependency */,
-				OBJ_171 /* PBXTargetDependency */,
-				OBJ_172 /* PBXTargetDependency */,
-			);
-			name = DangerXcodeStaticAnalyzerTests;
-			productName = DangerXcodeStaticAnalyzerTests;
-			productReference = "DangerXcodeStaticAnalyzer::DangerXcodeStaticAnalyzerTests::Product" /* DangerXcodeStaticAnalyzerTests.xctest */;
-			productType = "com.apple.product-type.bundle.unit-test";
-		};
 		"DangerXcodeStaticAnalyzer::SwiftPMPackageDescription" /* DangerXcodeStaticAnalyzerPackageDescription */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = OBJ_140 /* Build configuration list for PBXNativeTarget "DangerXcodeStaticAnalyzerPackageDescription" */;
+			buildConfigurationList = OBJ_142 /* Build configuration list for PBXNativeTarget "DangerXcodeStaticAnalyzerPackageDescription" */;
 			buildPhases = (
-				OBJ_143 /* Sources */,
+				OBJ_145 /* Sources */,
 			);
 			buildRules = (
 			);
@@ -631,10 +520,10 @@
 		};
 		"Logger::Logger" /* Logger */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = OBJ_173 /* Build configuration list for PBXNativeTarget "Logger" */;
+			buildConfigurationList = OBJ_147 /* Build configuration list for PBXNativeTarget "Logger" */;
 			buildPhases = (
-				OBJ_176 /* Sources */,
-				OBJ_178 /* Frameworks */,
+				OBJ_150 /* Sources */,
+				OBJ_152 /* Frameworks */,
 			);
 			buildRules = (
 			);
@@ -647,9 +536,9 @@
 		};
 		"Logger::SwiftPMPackageDescription" /* LoggerPackageDescription */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = OBJ_180 /* Build configuration list for PBXNativeTarget "LoggerPackageDescription" */;
+			buildConfigurationList = OBJ_154 /* Build configuration list for PBXNativeTarget "LoggerPackageDescription" */;
 			buildPhases = (
-				OBJ_183 /* Sources */,
+				OBJ_157 /* Sources */,
 			);
 			buildRules = (
 			);
@@ -661,15 +550,15 @@
 		};
 		"OctoKit::OctoKit" /* OctoKit */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = OBJ_185 /* Build configuration list for PBXNativeTarget "OctoKit" */;
+			buildConfigurationList = OBJ_159 /* Build configuration list for PBXNativeTarget "OctoKit" */;
 			buildPhases = (
-				OBJ_188 /* Sources */,
-				OBJ_203 /* Frameworks */,
+				OBJ_162 /* Sources */,
+				OBJ_177 /* Frameworks */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-				OBJ_205 /* PBXTargetDependency */,
+				OBJ_179 /* PBXTargetDependency */,
 			);
 			name = OctoKit;
 			productName = OctoKit;
@@ -678,9 +567,9 @@
 		};
 		"OctoKit::SwiftPMPackageDescription" /* OctoKitPackageDescription */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = OBJ_207 /* Build configuration list for PBXNativeTarget "OctoKitPackageDescription" */;
+			buildConfigurationList = OBJ_181 /* Build configuration list for PBXNativeTarget "OctoKitPackageDescription" */;
 			buildPhases = (
-				OBJ_210 /* Sources */,
+				OBJ_184 /* Sources */,
 			);
 			buildRules = (
 			);
@@ -692,10 +581,10 @@
 		};
 		"RequestKit::RequestKit" /* RequestKit */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = OBJ_212 /* Build configuration list for PBXNativeTarget "RequestKit" */;
+			buildConfigurationList = OBJ_186 /* Build configuration list for PBXNativeTarget "RequestKit" */;
 			buildPhases = (
-				OBJ_215 /* Sources */,
-				OBJ_219 /* Frameworks */,
+				OBJ_189 /* Sources */,
+				OBJ_193 /* Frameworks */,
 			);
 			buildRules = (
 			);
@@ -708,9 +597,9 @@
 		};
 		"RequestKit::SwiftPMPackageDescription" /* RequestKitPackageDescription */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = OBJ_221 /* Build configuration list for PBXNativeTarget "RequestKitPackageDescription" */;
+			buildConfigurationList = OBJ_195 /* Build configuration list for PBXNativeTarget "RequestKitPackageDescription" */;
 			buildPhases = (
-				OBJ_224 /* Sources */,
+				OBJ_198 /* Sources */,
 			);
 			buildRules = (
 			);
@@ -720,61 +609,47 @@
 			productName = RequestKitPackageDescription;
 			productType = "com.apple.product-type.framework";
 		};
-		"ShellOut::ShellOut" /* ShellOut */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = OBJ_226 /* Build configuration list for PBXNativeTarget "ShellOut" */;
-			buildPhases = (
-				OBJ_229 /* Sources */,
-				OBJ_231 /* Frameworks */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-			);
-			name = ShellOut;
-			productName = ShellOut;
-			productReference = "ShellOut::ShellOut::Product" /* ShellOut.framework */;
-			productType = "com.apple.product-type.framework";
-		};
-		"ShellOut::SwiftPMPackageDescription" /* ShellOutPackageDescription */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = OBJ_233 /* Build configuration list for PBXNativeTarget "ShellOutPackageDescription" */;
-			buildPhases = (
-				OBJ_236 /* Sources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-			);
-			name = ShellOutPackageDescription;
-			productName = ShellOutPackageDescription;
-			productType = "com.apple.product-type.framework";
-		};
 		"danger-swift::Danger" /* Danger */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = OBJ_86 /* Build configuration list for PBXNativeTarget "Danger" */;
+			buildConfigurationList = OBJ_81 /* Build configuration list for PBXNativeTarget "Danger" */;
 			buildPhases = (
-				OBJ_89 /* Sources */,
-				OBJ_106 /* Frameworks */,
+				OBJ_84 /* Sources */,
+				OBJ_102 /* Frameworks */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				OBJ_107 /* PBXTargetDependency */,
+				OBJ_109 /* PBXTargetDependency */,
 				OBJ_111 /* PBXTargetDependency */,
 				OBJ_113 /* PBXTargetDependency */,
-				OBJ_115 /* PBXTargetDependency */,
-				OBJ_117 /* PBXTargetDependency */,
 			);
 			name = Danger;
 			productName = Danger;
 			productReference = "danger-swift::Danger::Product" /* Danger.framework */;
 			productType = "com.apple.product-type.framework";
 		};
+		"danger-swift::DangerShellExecutor" /* DangerShellExecutor */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = OBJ_115 /* Build configuration list for PBXNativeTarget "DangerShellExecutor" */;
+			buildPhases = (
+				OBJ_118 /* Sources */,
+				OBJ_120 /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = DangerShellExecutor;
+			productName = DangerShellExecutor;
+			productReference = "danger-swift::DangerShellExecutor::Product" /* DangerShellExecutor.framework */;
+			productType = "com.apple.product-type.framework";
+		};
 		"danger-swift::SwiftPMPackageDescription" /* danger-swiftPackageDescription */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = OBJ_239 /* Build configuration list for PBXNativeTarget "danger-swiftPackageDescription" */;
+			buildConfigurationList = OBJ_201 /* Build configuration list for PBXNativeTarget "danger-swiftPackageDescription" */;
 			buildPhases = (
-				OBJ_242 /* Sources */,
+				OBJ_204 /* Sources */,
 			);
 			buildRules = (
 			);
@@ -802,257 +677,253 @@
 				en,
 			);
 			mainGroup = OBJ_5 /*  */;
-			productRefGroup = OBJ_76 /* Products */;
+			productRefGroup = OBJ_70 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
 				"danger-swift::Danger" /* Danger */,
+				"danger-swift::DangerShellExecutor" /* DangerShellExecutor */,
 				"DangerXcodeStaticAnalyzer::DangerXcodeStaticAnalyzer" /* DangerXcodeStaticAnalyzer */,
 				"DangerXcodeStaticAnalyzer::SwiftPMPackageDescription" /* DangerXcodeStaticAnalyzerPackageDescription */,
-				"DangerXcodeStaticAnalyzer::DangerXcodeStaticAnalyzerPackageTests::ProductTarget" /* DangerXcodeStaticAnalyzerPackageTests */,
-				"DangerXcodeStaticAnalyzer::DangerXcodeStaticAnalyzerTests" /* DangerXcodeStaticAnalyzerTests */,
 				"Logger::Logger" /* Logger */,
 				"Logger::SwiftPMPackageDescription" /* LoggerPackageDescription */,
 				"OctoKit::OctoKit" /* OctoKit */,
 				"OctoKit::SwiftPMPackageDescription" /* OctoKitPackageDescription */,
 				"RequestKit::RequestKit" /* RequestKit */,
 				"RequestKit::SwiftPMPackageDescription" /* RequestKitPackageDescription */,
-				"ShellOut::ShellOut" /* ShellOut */,
-				"ShellOut::SwiftPMPackageDescription" /* ShellOutPackageDescription */,
 				"danger-swift::SwiftPMPackageDescription" /* danger-swiftPackageDescription */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXSourcesBuildPhase section */
-		OBJ_123 /* Sources */ = {
+		OBJ_118 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 0;
 			files = (
-				OBJ_126 /* ShellExecutor.swift in Sources */,
-				OBJ_127 /* XcodeStaticAnalyzerViolation.swift in Sources */,
-				9B29529E22E20D1100D41334 /* XcodeStaticAnalyzerPlist.swift in Sources */,
-				9B29529C22E20C3B00D41334 /* DangerXcodeStaticAnalyzer.swift in Sources */,
+				OBJ_119 /* ShellExecutor.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		OBJ_143 /* Sources */ = {
+		OBJ_125 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 0;
 			files = (
-				OBJ_144 /* Package.swift in Sources */,
+				OBJ_126 /* DangerXcodeStaticAnalyzer.swift in Sources */,
+				OBJ_127 /* ShellExecutor.swift in Sources */,
+				OBJ_128 /* XcodeStaticAnalyzerPlist.swift in Sources */,
+				OBJ_129 /* XcodeStaticAnalyzerViolation.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		OBJ_154 /* Sources */ = {
+		OBJ_145 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 0;
 			files = (
+				OBJ_146 /* Package.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		OBJ_176 /* Sources */ = {
+		OBJ_150 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 0;
 			files = (
-				OBJ_177 /* Logger.swift in Sources */,
+				OBJ_151 /* Logger.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		OBJ_183 /* Sources */ = {
+		OBJ_157 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 0;
 			files = (
-				OBJ_184 /* Package.swift in Sources */,
+				OBJ_158 /* Package.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		OBJ_188 /* Sources */ = {
+		OBJ_162 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 0;
 			files = (
-				OBJ_189 /* Configuration.swift in Sources */,
-				OBJ_190 /* Follow.swift in Sources */,
-				OBJ_191 /* Issue.swift in Sources */,
-				OBJ_192 /* Label.swift in Sources */,
-				OBJ_193 /* Milestone.swift in Sources */,
-				OBJ_194 /* Octokit.swift in Sources */,
-				OBJ_195 /* Parameters.swift in Sources */,
-				OBJ_196 /* PublicKey.swift in Sources */,
-				OBJ_197 /* PullRequest.swift in Sources */,
-				OBJ_198 /* Repositories.swift in Sources */,
-				OBJ_199 /* Stars.swift in Sources */,
-				OBJ_200 /* Time.swift in Sources */,
-				OBJ_201 /* URL+URLParameters.swift in Sources */,
-				OBJ_202 /* User.swift in Sources */,
+				OBJ_163 /* Configuration.swift in Sources */,
+				OBJ_164 /* Follow.swift in Sources */,
+				OBJ_165 /* Issue.swift in Sources */,
+				OBJ_166 /* Label.swift in Sources */,
+				OBJ_167 /* Milestone.swift in Sources */,
+				OBJ_168 /* Octokit.swift in Sources */,
+				OBJ_169 /* Parameters.swift in Sources */,
+				OBJ_170 /* PublicKey.swift in Sources */,
+				OBJ_171 /* PullRequest.swift in Sources */,
+				OBJ_172 /* Repositories.swift in Sources */,
+				OBJ_173 /* Stars.swift in Sources */,
+				OBJ_174 /* Time.swift in Sources */,
+				OBJ_175 /* URL+URLParameters.swift in Sources */,
+				OBJ_176 /* User.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		OBJ_210 /* Sources */ = {
+		OBJ_184 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 0;
 			files = (
-				OBJ_211 /* Package.swift in Sources */,
+				OBJ_185 /* Package.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		OBJ_215 /* Sources */ = {
+		OBJ_189 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 0;
 			files = (
-				OBJ_216 /* JSONPostRouter.swift in Sources */,
-				OBJ_217 /* RequestKitSession.swift in Sources */,
-				OBJ_218 /* Router.swift in Sources */,
+				OBJ_190 /* JSONPostRouter.swift in Sources */,
+				OBJ_191 /* RequestKitSession.swift in Sources */,
+				OBJ_192 /* Router.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		OBJ_224 /* Sources */ = {
+		OBJ_198 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 0;
 			files = (
-				OBJ_225 /* Package.swift in Sources */,
+				OBJ_199 /* Package.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		OBJ_229 /* Sources */ = {
+		OBJ_204 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 0;
 			files = (
-				OBJ_230 /* ShellOut.swift in Sources */,
+				OBJ_205 /* Package.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		OBJ_236 /* Sources */ = {
+		OBJ_84 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 0;
 			files = (
-				OBJ_237 /* Package.swift in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		OBJ_242 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 0;
-			files = (
-				OBJ_243 /* Package.swift in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		OBJ_89 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 0;
-			files = (
-				OBJ_90 /* BitBucketServerDSL.swift in Sources */,
-				OBJ_91 /* Danger.swift in Sources */,
-				OBJ_92 /* DangerDSL.swift in Sources */,
-				OBJ_93 /* DangerResults.swift in Sources */,
-				OBJ_94 /* DangerUtils.swift in Sources */,
-				OBJ_95 /* DateFormatterExtensions.swift in Sources */,
-				OBJ_96 /* NSRegularExpressionExtensions.swift in Sources */,
-				OBJ_97 /* File.swift in Sources */,
-				OBJ_98 /* GitDSL.swift in Sources */,
-				OBJ_99 /* GitHubDSL.swift in Sources */,
-				OBJ_100 /* CurrentPathProvider.swift in Sources */,
-				OBJ_101 /* ShellExecutor.swift in Sources */,
-				OBJ_102 /* SwiftLint.swift in Sources */,
-				OBJ_103 /* SwiftLintViolation.swift in Sources */,
-				OBJ_104 /* Report.swift in Sources */,
-				OBJ_105 /* Settings.swift in Sources */,
+				OBJ_85 /* BitBucketServerDSL.swift in Sources */,
+				OBJ_86 /* Danger.swift in Sources */,
+				OBJ_87 /* DangerDSL.swift in Sources */,
+				OBJ_88 /* DangerResults.swift in Sources */,
+				OBJ_89 /* DangerUtils.swift in Sources */,
+				OBJ_90 /* DateFormatterExtensions.swift in Sources */,
+				OBJ_91 /* NSRegularExpressionExtensions.swift in Sources */,
+				OBJ_92 /* File.swift in Sources */,
+				OBJ_93 /* GitDSL.swift in Sources */,
+				OBJ_94 /* GitHubDSL.swift in Sources */,
+				OBJ_95 /* GitLabDSL.swift in Sources */,
+				OBJ_96 /* CurrentPathProvider.swift in Sources */,
+				OBJ_97 /* SwiftLint.swift in Sources */,
+				OBJ_98 /* SwiftLintViolation.swift in Sources */,
+				OBJ_99 /* SwiftlintReportDeleter.swift in Sources */,
+				OBJ_100 /* Report.swift in Sources */,
+				OBJ_101 /* Settings.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		OBJ_111 /* PBXTargetDependency */ = {
+		OBJ_107 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = "Logger::Logger" /* Logger */;
-			targetProxy = 9B29528B22E20B6D00D41334 /* PBXContainerItemProxy */;
+			targetProxy = 9B81502122E22640001022CF /* PBXContainerItemProxy */;
+		};
+		OBJ_109 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = "OctoKit::OctoKit" /* OctoKit */;
+			targetProxy = 9B81502222E22640001022CF /* PBXContainerItemProxy */;
+		};
+		OBJ_111 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = "RequestKit::RequestKit" /* RequestKit */;
+			targetProxy = 9B81502422E22640001022CF /* PBXContainerItemProxy */;
 		};
 		OBJ_113 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = "OctoKit::OctoKit" /* OctoKit */;
-			targetProxy = 9B29528C22E20B6D00D41334 /* PBXContainerItemProxy */;
-		};
-		OBJ_115 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = "RequestKit::RequestKit" /* RequestKit */;
-			targetProxy = 9B29528E22E20B6D00D41334 /* PBXContainerItemProxy */;
-		};
-		OBJ_117 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = "ShellOut::ShellOut" /* ShellOut */;
-			targetProxy = 9B29528F22E20B6D00D41334 /* PBXContainerItemProxy */;
-		};
-		OBJ_134 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = "danger-swift::Danger" /* Danger */;
-			targetProxy = 9B29528A22E20B6D00D41334 /* PBXContainerItemProxy */;
-		};
-		OBJ_135 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = "Logger::Logger" /* Logger */;
-			targetProxy = 9B29529022E20B6D00D41334 /* PBXContainerItemProxy */;
+			target = "danger-swift::DangerShellExecutor" /* DangerShellExecutor */;
+			targetProxy = 9B81502522E22640001022CF /* PBXContainerItemProxy */;
 		};
 		OBJ_136 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = "OctoKit::OctoKit" /* OctoKit */;
-			targetProxy = 9B29529122E20B6D00D41334 /* PBXContainerItemProxy */;
+			target = "danger-swift::Danger" /* Danger */;
+			targetProxy = 9B81502022E22640001022CF /* PBXContainerItemProxy */;
 		};
 		OBJ_137 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = "RequestKit::RequestKit" /* RequestKit */;
-			targetProxy = 9B29529222E20B6D00D41334 /* PBXContainerItemProxy */;
+			target = "Logger::Logger" /* Logger */;
+			targetProxy = 9B81502622E22640001022CF /* PBXContainerItemProxy */;
 		};
 		OBJ_138 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = "ShellOut::ShellOut" /* ShellOut */;
-			targetProxy = 9B29529322E20B6D00D41334 /* PBXContainerItemProxy */;
-		};
-		OBJ_149 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = "DangerXcodeStaticAnalyzer::DangerXcodeStaticAnalyzerTests" /* DangerXcodeStaticAnalyzerTests */;
-			targetProxy = 9B29529A22E20B6F00D41334 /* PBXContainerItemProxy */;
-		};
-		OBJ_167 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = "DangerXcodeStaticAnalyzer::DangerXcodeStaticAnalyzer" /* DangerXcodeStaticAnalyzer */;
-			targetProxy = 9B29529422E20B6D00D41334 /* PBXContainerItemProxy */;
-		};
-		OBJ_168 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = "danger-swift::Danger" /* Danger */;
-			targetProxy = 9B29529522E20B6D00D41334 /* PBXContainerItemProxy */;
-		};
-		OBJ_169 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = "Logger::Logger" /* Logger */;
-			targetProxy = 9B29529622E20B6D00D41334 /* PBXContainerItemProxy */;
-		};
-		OBJ_170 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
 			target = "OctoKit::OctoKit" /* OctoKit */;
-			targetProxy = 9B29529722E20B6D00D41334 /* PBXContainerItemProxy */;
+			targetProxy = 9B81502722E22640001022CF /* PBXContainerItemProxy */;
 		};
-		OBJ_171 /* PBXTargetDependency */ = {
+		OBJ_139 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = "RequestKit::RequestKit" /* RequestKit */;
-			targetProxy = 9B29529822E20B6D00D41334 /* PBXContainerItemProxy */;
+			targetProxy = 9B81502822E22640001022CF /* PBXContainerItemProxy */;
 		};
-		OBJ_172 /* PBXTargetDependency */ = {
+		OBJ_140 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = "ShellOut::ShellOut" /* ShellOut */;
-			targetProxy = 9B29529922E20B6D00D41334 /* PBXContainerItemProxy */;
+			target = "danger-swift::DangerShellExecutor" /* DangerShellExecutor */;
+			targetProxy = 9B81502922E22640001022CF /* PBXContainerItemProxy */;
 		};
-		OBJ_205 /* PBXTargetDependency */ = {
+		OBJ_179 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = "RequestKit::RequestKit" /* RequestKit */;
-			targetProxy = 9B29528D22E20B6D00D41334 /* PBXContainerItemProxy */;
+			targetProxy = 9B81502322E22640001022CF /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
-		OBJ_121 /* Debug */ = {
+		OBJ_116 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ENABLE_TESTABILITY = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PLATFORM_DIR)/Developer/Library/Frameworks",
+				);
+				HEADER_SEARCH_PATHS = "$(inherited)";
+				INFOPLIST_FILE = DangerXcodeStaticAnalyzer.xcodeproj/DangerShellExecutor_Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) $(TOOLCHAIN_DIR)/usr/lib/swift/macosx";
+				OTHER_CFLAGS = "$(inherited)";
+				OTHER_LDFLAGS = "$(inherited)";
+				OTHER_SWIFT_FLAGS = "$(inherited)";
+				PRODUCT_BUNDLE_IDENTIFIER = DangerShellExecutor;
+				PRODUCT_MODULE_NAME = "$(TARGET_NAME:c99extidentifier)";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited)";
+				SWIFT_VERSION = 4.2;
+				TARGET_NAME = DangerShellExecutor;
+			};
+			name = Debug;
+		};
+		OBJ_117 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ENABLE_TESTABILITY = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PLATFORM_DIR)/Developer/Library/Frameworks",
+				);
+				HEADER_SEARCH_PATHS = "$(inherited)";
+				INFOPLIST_FILE = DangerXcodeStaticAnalyzer.xcodeproj/DangerShellExecutor_Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) $(TOOLCHAIN_DIR)/usr/lib/swift/macosx";
+				OTHER_CFLAGS = "$(inherited)";
+				OTHER_LDFLAGS = "$(inherited)";
+				OTHER_SWIFT_FLAGS = "$(inherited)";
+				PRODUCT_BUNDLE_IDENTIFIER = DangerShellExecutor;
+				PRODUCT_MODULE_NAME = "$(TARGET_NAME:c99extidentifier)";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited)";
+				SWIFT_VERSION = 4.2;
+				TARGET_NAME = DangerShellExecutor;
+			};
+			name = Release;
+		};
+		OBJ_123 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ENABLE_TESTABILITY = YES;
@@ -1076,7 +947,7 @@
 			};
 			name = Debug;
 		};
-		OBJ_122 /* Release */ = {
+		OBJ_124 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ENABLE_TESTABILITY = YES;
@@ -1100,7 +971,7 @@
 			};
 			name = Release;
 		};
-		OBJ_141 /* Debug */ = {
+		OBJ_143 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				LD = /usr/bin/true;
@@ -1109,7 +980,7 @@
 			};
 			name = Debug;
 		};
-		OBJ_142 /* Release */ = {
+		OBJ_144 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				LD = /usr/bin/true;
@@ -1118,61 +989,7 @@
 			};
 			name = Release;
 		};
-		OBJ_147 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-			};
-			name = Debug;
-		};
-		OBJ_148 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-			};
-			name = Release;
-		};
-		OBJ_152 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				CLANG_ENABLE_MODULES = YES;
-				EMBEDDED_CONTENT_CONTAINS_SWIFT = YES;
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(inherited)",
-					"$(PLATFORM_DIR)/Developer/Library/Frameworks",
-				);
-				HEADER_SEARCH_PATHS = "$(inherited)";
-				INFOPLIST_FILE = DangerXcodeStaticAnalyzer.xcodeproj/DangerXcodeStaticAnalyzerTests_Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @loader_path/../Frameworks @loader_path/Frameworks";
-				OTHER_CFLAGS = "$(inherited)";
-				OTHER_LDFLAGS = "$(inherited)";
-				OTHER_SWIFT_FLAGS = "$(inherited)";
-				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited)";
-				SWIFT_VERSION = 4.0;
-				TARGET_NAME = DangerXcodeStaticAnalyzerTests;
-			};
-			name = Debug;
-		};
-		OBJ_153 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				CLANG_ENABLE_MODULES = YES;
-				EMBEDDED_CONTENT_CONTAINS_SWIFT = YES;
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(inherited)",
-					"$(PLATFORM_DIR)/Developer/Library/Frameworks",
-				);
-				HEADER_SEARCH_PATHS = "$(inherited)";
-				INFOPLIST_FILE = DangerXcodeStaticAnalyzer.xcodeproj/DangerXcodeStaticAnalyzerTests_Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @loader_path/../Frameworks @loader_path/Frameworks";
-				OTHER_CFLAGS = "$(inherited)";
-				OTHER_LDFLAGS = "$(inherited)";
-				OTHER_SWIFT_FLAGS = "$(inherited)";
-				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited)";
-				SWIFT_VERSION = 4.0;
-				TARGET_NAME = DangerXcodeStaticAnalyzerTests;
-			};
-			name = Release;
-		};
-		OBJ_174 /* Debug */ = {
+		OBJ_148 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ENABLE_TESTABILITY = YES;
@@ -1196,7 +1013,7 @@
 			};
 			name = Debug;
 		};
-		OBJ_175 /* Release */ = {
+		OBJ_149 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ENABLE_TESTABILITY = YES;
@@ -1220,7 +1037,7 @@
 			};
 			name = Release;
 		};
-		OBJ_181 /* Debug */ = {
+		OBJ_155 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				LD = /usr/bin/true;
@@ -1229,7 +1046,7 @@
 			};
 			name = Debug;
 		};
-		OBJ_182 /* Release */ = {
+		OBJ_156 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				LD = /usr/bin/true;
@@ -1238,7 +1055,7 @@
 			};
 			name = Release;
 		};
-		OBJ_186 /* Debug */ = {
+		OBJ_160 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ENABLE_TESTABILITY = YES;
@@ -1262,7 +1079,7 @@
 			};
 			name = Debug;
 		};
-		OBJ_187 /* Release */ = {
+		OBJ_161 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ENABLE_TESTABILITY = YES;
@@ -1286,7 +1103,7 @@
 			};
 			name = Release;
 		};
-		OBJ_208 /* Debug */ = {
+		OBJ_182 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				LD = /usr/bin/true;
@@ -1295,7 +1112,7 @@
 			};
 			name = Debug;
 		};
-		OBJ_209 /* Release */ = {
+		OBJ_183 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				LD = /usr/bin/true;
@@ -1304,7 +1121,7 @@
 			};
 			name = Release;
 		};
-		OBJ_213 /* Debug */ = {
+		OBJ_187 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ENABLE_TESTABILITY = YES;
@@ -1328,7 +1145,7 @@
 			};
 			name = Debug;
 		};
-		OBJ_214 /* Release */ = {
+		OBJ_188 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ENABLE_TESTABILITY = YES;
@@ -1352,7 +1169,7 @@
 			};
 			name = Release;
 		};
-		OBJ_222 /* Debug */ = {
+		OBJ_196 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				LD = /usr/bin/true;
@@ -1361,7 +1178,7 @@
 			};
 			name = Debug;
 		};
-		OBJ_223 /* Release */ = {
+		OBJ_197 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				LD = /usr/bin/true;
@@ -1370,55 +1187,7 @@
 			};
 			name = Release;
 		};
-		OBJ_227 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ENABLE_TESTABILITY = YES;
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(inherited)",
-					"$(PLATFORM_DIR)/Developer/Library/Frameworks",
-				);
-				HEADER_SEARCH_PATHS = "$(inherited)";
-				INFOPLIST_FILE = DangerXcodeStaticAnalyzer.xcodeproj/ShellOut_Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) $(TOOLCHAIN_DIR)/usr/lib/swift/macosx";
-				OTHER_CFLAGS = "$(inherited)";
-				OTHER_LDFLAGS = "$(inherited)";
-				OTHER_SWIFT_FLAGS = "$(inherited)";
-				PRODUCT_BUNDLE_IDENTIFIER = ShellOut;
-				PRODUCT_MODULE_NAME = "$(TARGET_NAME:c99extidentifier)";
-				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
-				SKIP_INSTALL = YES;
-				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited)";
-				SWIFT_VERSION = 4.2;
-				TARGET_NAME = ShellOut;
-			};
-			name = Debug;
-		};
-		OBJ_228 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ENABLE_TESTABILITY = YES;
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(inherited)",
-					"$(PLATFORM_DIR)/Developer/Library/Frameworks",
-				);
-				HEADER_SEARCH_PATHS = "$(inherited)";
-				INFOPLIST_FILE = DangerXcodeStaticAnalyzer.xcodeproj/ShellOut_Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) $(TOOLCHAIN_DIR)/usr/lib/swift/macosx";
-				OTHER_CFLAGS = "$(inherited)";
-				OTHER_LDFLAGS = "$(inherited)";
-				OTHER_SWIFT_FLAGS = "$(inherited)";
-				PRODUCT_BUNDLE_IDENTIFIER = ShellOut;
-				PRODUCT_MODULE_NAME = "$(TARGET_NAME:c99extidentifier)";
-				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
-				SKIP_INSTALL = YES;
-				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited)";
-				SWIFT_VERSION = 4.2;
-				TARGET_NAME = ShellOut;
-			};
-			name = Release;
-		};
-		OBJ_234 /* Debug */ = {
+		OBJ_202 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				LD = /usr/bin/true;
@@ -1427,25 +1196,7 @@
 			};
 			name = Debug;
 		};
-		OBJ_235 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				LD = /usr/bin/true;
-				OTHER_SWIFT_FLAGS = "-swift-version 4.2 -I $(TOOLCHAIN_DIR)/usr/lib/swift/pm/4_2 -target x86_64-apple-macosx10.10 -sdk /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.14.sdk";
-				SWIFT_VERSION = 4.2;
-			};
-			name = Release;
-		};
-		OBJ_240 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				LD = /usr/bin/true;
-				OTHER_SWIFT_FLAGS = "-swift-version 4.2 -I $(TOOLCHAIN_DIR)/usr/lib/swift/pm/4_2 -target x86_64-apple-macosx10.10 -sdk /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.14.sdk";
-				SWIFT_VERSION = 4.2;
-			};
-			name = Debug;
-		};
-		OBJ_241 /* Release */ = {
+		OBJ_203 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				LD = /usr/bin/true;
@@ -1469,7 +1220,7 @@
 					"SWIFT_PACKAGE=1",
 					"DEBUG=1",
 				);
-				MACOSX_DEPLOYMENT_TARGET = 10.10;
+				MACOSX_DEPLOYMENT_TARGET = 10.12;
 				ONLY_ACTIVE_ARCH = YES;
 				OTHER_SWIFT_FLAGS = "-DXcode";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -1494,7 +1245,7 @@
 					"$(inherited)",
 					"SWIFT_PACKAGE=1",
 				);
-				MACOSX_DEPLOYMENT_TARGET = 10.10;
+				MACOSX_DEPLOYMENT_TARGET = 10.12;
 				OTHER_SWIFT_FLAGS = "-DXcode";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = macosx;
@@ -1505,7 +1256,7 @@
 			};
 			name = Release;
 		};
-		OBJ_87 /* Debug */ = {
+		OBJ_82 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ENABLE_TESTABILITY = YES;
@@ -1529,7 +1280,7 @@
 			};
 			name = Debug;
 		};
-		OBJ_88 /* Release */ = {
+		OBJ_83 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ENABLE_TESTABILITY = YES;
@@ -1556,65 +1307,83 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		OBJ_120 /* Build configuration list for PBXNativeTarget "DangerXcodeStaticAnalyzer" */ = {
+		OBJ_115 /* Build configuration list for PBXNativeTarget "DangerShellExecutor" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				OBJ_121 /* Debug */,
-				OBJ_122 /* Release */,
+				OBJ_116 /* Debug */,
+				OBJ_117 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		OBJ_140 /* Build configuration list for PBXNativeTarget "DangerXcodeStaticAnalyzerPackageDescription" */ = {
+		OBJ_122 /* Build configuration list for PBXNativeTarget "DangerXcodeStaticAnalyzer" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				OBJ_141 /* Debug */,
-				OBJ_142 /* Release */,
+				OBJ_123 /* Debug */,
+				OBJ_124 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		OBJ_146 /* Build configuration list for PBXAggregateTarget "DangerXcodeStaticAnalyzerPackageTests" */ = {
+		OBJ_142 /* Build configuration list for PBXNativeTarget "DangerXcodeStaticAnalyzerPackageDescription" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				OBJ_147 /* Debug */,
-				OBJ_148 /* Release */,
+				OBJ_143 /* Debug */,
+				OBJ_144 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		OBJ_151 /* Build configuration list for PBXNativeTarget "DangerXcodeStaticAnalyzerTests" */ = {
+		OBJ_147 /* Build configuration list for PBXNativeTarget "Logger" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				OBJ_152 /* Debug */,
-				OBJ_153 /* Release */,
+				OBJ_148 /* Debug */,
+				OBJ_149 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		OBJ_173 /* Build configuration list for PBXNativeTarget "Logger" */ = {
+		OBJ_154 /* Build configuration list for PBXNativeTarget "LoggerPackageDescription" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				OBJ_174 /* Debug */,
-				OBJ_175 /* Release */,
+				OBJ_155 /* Debug */,
+				OBJ_156 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		OBJ_180 /* Build configuration list for PBXNativeTarget "LoggerPackageDescription" */ = {
+		OBJ_159 /* Build configuration list for PBXNativeTarget "OctoKit" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				OBJ_181 /* Debug */,
-				OBJ_182 /* Release */,
+				OBJ_160 /* Debug */,
+				OBJ_161 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		OBJ_185 /* Build configuration list for PBXNativeTarget "OctoKit" */ = {
+		OBJ_181 /* Build configuration list for PBXNativeTarget "OctoKitPackageDescription" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				OBJ_186 /* Debug */,
-				OBJ_187 /* Release */,
+				OBJ_182 /* Debug */,
+				OBJ_183 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		OBJ_186 /* Build configuration list for PBXNativeTarget "RequestKit" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				OBJ_187 /* Debug */,
+				OBJ_188 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		OBJ_195 /* Build configuration list for PBXNativeTarget "RequestKitPackageDescription" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				OBJ_196 /* Debug */,
+				OBJ_197 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
@@ -1628,65 +1397,20 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		OBJ_207 /* Build configuration list for PBXNativeTarget "OctoKitPackageDescription" */ = {
+		OBJ_201 /* Build configuration list for PBXNativeTarget "danger-swiftPackageDescription" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				OBJ_208 /* Debug */,
-				OBJ_209 /* Release */,
+				OBJ_202 /* Debug */,
+				OBJ_203 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		OBJ_212 /* Build configuration list for PBXNativeTarget "RequestKit" */ = {
+		OBJ_81 /* Build configuration list for PBXNativeTarget "Danger" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				OBJ_213 /* Debug */,
-				OBJ_214 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		OBJ_221 /* Build configuration list for PBXNativeTarget "RequestKitPackageDescription" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				OBJ_222 /* Debug */,
-				OBJ_223 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		OBJ_226 /* Build configuration list for PBXNativeTarget "ShellOut" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				OBJ_227 /* Debug */,
-				OBJ_228 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		OBJ_233 /* Build configuration list for PBXNativeTarget "ShellOutPackageDescription" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				OBJ_234 /* Debug */,
-				OBJ_235 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		OBJ_239 /* Build configuration list for PBXNativeTarget "danger-swiftPackageDescription" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				OBJ_240 /* Debug */,
-				OBJ_241 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		OBJ_86 /* Build configuration list for PBXNativeTarget "Danger" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				OBJ_87 /* Debug */,
-				OBJ_88 /* Release */,
+				OBJ_82 /* Debug */,
+				OBJ_83 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

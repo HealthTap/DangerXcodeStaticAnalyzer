@@ -14,9 +14,6 @@ public struct XcodeStaticAnalyzer {
     @discardableResult
     public static func analyze(arguments: [String],
                                reportAllFiles: Bool = false) -> [XcodeStaticAnalyzerViolation] {
-
-        // First, for debugging purposes, print the working directory.
-        print("Working directory: \(shellExecutor.execute("pwd"))")
         return self.analyze(
             danger: danger,
             shellExecutor: shellExecutor,
@@ -35,7 +32,13 @@ internal extension XcodeStaticAnalyzer {
         reportAllFiles: Bool = false) -> [XcodeStaticAnalyzerViolation] {
 
         // Clear a directory for storing the output from the static analyzer.
-        let outputDirectory = FileManager.default.temporaryDirectory.appendingPathComponent("clang").path
+        let outputDirectory: String
+        if #available(macOS 10.12, *) {
+            outputDirectory = FileManager.default.temporaryDirectory.appendingPathComponent("clang").path
+        } else {
+            outputDirectory = NSTemporaryDirectory().appending("/clang")
+        }
+
         print("output directory: \(outputDirectory)")
         if FileManager.default.fileExists(atPath: outputDirectory) {
             do {
@@ -46,7 +49,7 @@ internal extension XcodeStaticAnalyzer {
         }
 
         // Amend the input arguments with the ones required in this context.
-        var arguments = arguments + [
+        let arguments = arguments + [
             "analyze",
             "CLANG_ANALYZER_OUTPUT=plist",
             "CLANG_ANALYZER_OUTPUT_DIR=\"\(outputDirectory)\"",
@@ -55,7 +58,7 @@ internal extension XcodeStaticAnalyzer {
         // Execute the static analyzer
         shellExecutor.executeUnpiped("xcodebuild", arguments: arguments)
 
-        var files = danger.git.createdFiles + danger.git.modifiedFiles
+        let files = danger.git.createdFiles + danger.git.modifiedFiles
         print(files)
 
         let analyzerViolations = FileManager.default
@@ -63,7 +66,7 @@ internal extension XcodeStaticAnalyzer {
             .allObjects
             .map({ URL(fileURLWithPath: outputDirectory).appendingPathComponent($0 as! String) })
             .filter({ $0.pathExtension == "plist" })
-            .flatMap({ (url) -> [XcodeAnalyzerViolation] in
+            .flatMap({ (url) -> [XcodeStaticAnalyzerViolation] in
 
                 guard let data = try? Data(contentsOf: url) else {
                     print("Unable to generate Data from contents of: \(url)")
@@ -72,14 +75,14 @@ internal extension XcodeStaticAnalyzer {
 
                 let decoder = PropertyListDecoder()
 
-                guard let plist = try? decoder.decode(XcodeAnalyzerPlist.self, from: data) else {
+                guard let plist = try? decoder.decode(XcodeStaticAnalyzerPlist.self, from: data) else {
                     print("Unable to decode plist from contents of: \(url)")
                     return []
                 }
 
                 return plist.violations()
             })
-            .filter({ reportAllFiles || files.contains($0.location.file) })
+            .filter({ reportAllFiles || files.contains($0.location.file) }) ?? []
 
         analyzerViolations.forEach({ (violation) in
             print("\(violation.location.file)")
@@ -91,7 +94,7 @@ internal extension XcodeStaticAnalyzer {
 
 }
 
-private extension String {
+internal extension String {
     func deletingPrefix(_ prefix: String) -> String {
         guard hasPrefix(prefix) else { return self }
         return String(dropFirst(prefix.count))

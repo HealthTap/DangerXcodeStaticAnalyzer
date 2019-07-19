@@ -1,6 +1,6 @@
 import Foundation
 
-struct XcodeAnalyzerPlist: Codable {
+internal struct XcodeStaticAnalyzerPlist: Codable {
     let diagnostics: [Diagnostic]
     let files: [String]
 
@@ -30,7 +30,7 @@ struct XcodeAnalyzerPlist: Codable {
 
             return XcodeStaticAnalyzerViolation(
                 description: diagnostic.description,
-                location: XcodeAnalyzerViolation.Location(
+                location: XcodeStaticAnalyzerViolation.Location(
                     line: diagnostic.location.line,
                     column: diagnostic.location.column,
                     file: file

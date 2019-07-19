@@ -28,16 +28,6 @@
       selectedLauncherIdentifier = "Xcode.DebuggerFoundation.Launcher.LLDB"
       shouldUseLaunchSchemeArgsEnv = "YES">
       <Testables>
-         <TestableReference
-            skipped = "NO">
-            <BuildableReference
-               BuildableIdentifier = "primary"
-               BlueprintIdentifier = "DangerXcodeStaticAnalyzer::DangerXcodeStaticAnalyzerTests"
-               BuildableName = "DangerXcodeStaticAnalyzerTests.xctest"
-               BlueprintName = "DangerXcodeStaticAnalyzerTests"
-               ReferencedContainer = "container:DangerXcodeStaticAnalyzer.xcodeproj">
-            </BuildableReference>
-         </TestableReference>
       </Testables>
       <AdditionalOptions>
       </AdditionalOptions>
