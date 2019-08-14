@@ -29,7 +29,7 @@ internal extension XcodeStaticAnalyzer {
         danger: DangerDSL,
         shellExecutor: ShellExecutor,
         arguments: [String],
-        reportAllFiles: Bool = false) throws -> [XcodeStaticAnalyzerViolation] {
+        reportAllFiles: Bool = false) -> XcodeStaticAnalyzerResult {
 
         // Clear a directory for storing the output from the static analyzer.
         let outputDirectory: String
@@ -58,7 +58,6 @@ internal extension XcodeStaticAnalyzer {
 
         // Execute the static analyzer
         let buildResult = shellExecutor.executeUnpiped("xcodebuild", arguments: arguments)
-        guard buildResult == 0 else { throw ExecutionError.buildError(buildResult) }
 
         let files = danger.git.createdFiles + danger.git.modifiedFiles
         print(files)
@@ -100,24 +99,10 @@ internal extension XcodeStaticAnalyzer {
             }
         }
 
-        return analyzerViolations
+        return XcodeStaticAnalyzerResult(violations: analyzerViolations, result: buildResult)
     }
 
 }
-
-public enum ExecutionError: Error {
-    case buildError(Int)
-}
-
-extension ExecutionError {
-    public var localizedDescription: String {
-        switch self {
-        case .buildError(let result):
-            return "Execution failed with exit code \(result)"
-        }
-    }
-}
-
 internal extension String {
     func deletingPrefix(_ prefix: String) -> String {
         guard hasPrefix(prefix) else { return self }
