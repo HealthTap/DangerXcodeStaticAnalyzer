@@ -29,7 +29,7 @@ internal extension XcodeStaticAnalyzer {
         danger: DangerDSL,
         shellExecutor: ShellExecutor,
         arguments: [String],
-        reportAllFiles: Bool = false) throws -> [XcodeStaticAnalyzerViolation] {
+        reportAllFiles: Bool = false) -> XcodeStaticAnalyzerResult {
 
         // Clear a directory for storing the output from the static analyzer.
         let outputDirectory: String
@@ -58,7 +58,6 @@ internal extension XcodeStaticAnalyzer {
 
         // Execute the static analyzer
         let buildResult = shellExecutor.executeUnpiped("xcodebuild", arguments: arguments)
-        guard buildResult == 0 else { throw ExecutionError.buildError(buildResult) }
 
         let files = danger.git.createdFiles + danger.git.modifiedFiles
         print(files)
@@ -100,7 +99,12 @@ internal extension XcodeStaticAnalyzer {
             }
         }
 
-        return analyzerViolations
+        let analyzerResult: XcodeStaticAnalyzerBuildResult = buildResult == 0 ? .success : .failure(buildResult)
+
+        return XcodeStaticAnalyzerResult(
+            violations: analyzerViolations,
+            xcodeBuildResult: analyzerResult
+        )
     }
 
 }
