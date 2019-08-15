@@ -13,7 +13,7 @@ public struct XcodeStaticAnalyzer {
     /// and CLANG_ANALYZER_OUTPUT_DIR arguments
     @discardableResult
     public static func analyze(arguments: [String],
-                               reportAllFiles: Bool = false) -> [XcodeStaticAnalyzerViolation] {
+                               reportAllFiles: Bool = false) -> XcodeStaticAnalyzerResult {
         return self.analyze(
             danger: danger,
             shellExecutor: shellExecutor,
