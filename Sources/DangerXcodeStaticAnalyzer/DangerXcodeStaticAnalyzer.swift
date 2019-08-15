@@ -13,7 +13,7 @@ public struct XcodeStaticAnalyzer {
     /// and CLANG_ANALYZER_OUTPUT_DIR arguments
     @discardableResult
     public static func analyze(arguments: [String],
-                               reportAllFiles: Bool = false) -> [XcodeStaticAnalyzerViolation] {
+                               reportAllFiles: Bool = false) -> XcodeStaticAnalyzerResult {
         return self.analyze(
             danger: danger,
             shellExecutor: shellExecutor,
@@ -29,7 +29,7 @@ internal extension XcodeStaticAnalyzer {
         danger: DangerDSL,
         shellExecutor: ShellExecutor,
         arguments: [String],
-        reportAllFiles: Bool = false) -> [XcodeStaticAnalyzerViolation] {
+        reportAllFiles: Bool = false) -> XcodeStaticAnalyzerResult {
 
         // Clear a directory for storing the output from the static analyzer.
         let outputDirectory: String
@@ -57,7 +57,7 @@ internal extension XcodeStaticAnalyzer {
         ]
 
         // Execute the static analyzer
-        shellExecutor.executeUnpiped("xcodebuild", arguments: arguments)
+        let buildResult = shellExecutor.executeUnpiped("xcodebuild", arguments: arguments)
 
         let files = danger.git.createdFiles + danger.git.modifiedFiles
         print(files)
@@ -99,11 +99,10 @@ internal extension XcodeStaticAnalyzer {
             }
         }
 
-        return analyzerViolations
+        return XcodeStaticAnalyzerResult(violations: analyzerViolations, result: buildResult)
     }
 
 }
-
 internal extension String {
     func deletingPrefix(_ prefix: String) -> String {
         guard hasPrefix(prefix) else { return self }

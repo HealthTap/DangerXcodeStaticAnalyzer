@@ -1,7 +1,7 @@
 import Foundation
 
 internal class ShellExecutor {
-    func executeUnpiped(_ command: String, arguments: [String] = []) {
+    func executeUnpiped(_ command: String, arguments: [String] = []) -> Int32 {
         let script = "\(command) \(arguments.joined(separator: " "))"
         print("Executing \(script)")
 
@@ -13,5 +13,6 @@ internal class ShellExecutor {
 
         task.launch()
         task.waitUntilExit()
+        return task.terminationStatus
     }
 }
