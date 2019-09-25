@@ -10,7 +10,7 @@ let package = Package(
             targets: ["DangerXcodeStaticAnalyzer"]),
     ],
     dependencies: [
-        .package(url: "https://github.com/danger/swift.git", from: "2.0"),
+        .package(url: "https://github.com/danger/swift.git", from: "2.0.4"),
     ],
     targets: [
         .target(
